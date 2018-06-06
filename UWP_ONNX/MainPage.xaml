@@ -9,6 +9,26 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Content="Open File" HorizontalAlignment="Center" Margin="20" Click="Button_Click"></Button>
+        <Image Grid.Row="1" Name="imgFile" Stretch="Uniform"></Image>
+        <Grid HorizontalAlignment="Center" Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Insulated Jacket Probability:" Margin="20"></TextBlock>
+            <TextBlock Text="Hardshell Jacket Probability:" Grid.Row="1" Margin="20"></TextBlock>
+            <TextBlock Name="insulated_prob" Grid.Column="1" Margin="20"></TextBlock>
+            <TextBlock Name="hardshell_prob" Grid.Column="1" Grid.Row="1" Margin="20"></TextBlock>
+        </Grid>
     </Grid>
 </Page>

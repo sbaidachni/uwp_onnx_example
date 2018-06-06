@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="jacket_model.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -104,6 +105,9 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="Models\jacket_model.onnx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="UWP_ONNX_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +119,136 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Testing\hardshell\10184925x1094142_zm.jpeg" />
+    <Content Include="Testing\hardshell\10184925x1107866_zm.jpeg" />
+    <Content Include="Testing\hardshell\10185324x1011341_zm.jpeg" />
+    <Content Include="Testing\hardshell\10207377x1013311_zm.jpeg" />
+    <Content Include="Testing\hardshell\10214106x1012234_zm.jpeg" />
+    <Content Include="Testing\insulated\10252803x1076923_zm.jpeg" />
+    <Content Include="Testing\insulated\10252803x1149691_zm.jpeg" />
+    <Content Include="Testing\insulated\10252804x1012905_zm.jpeg" />
+    <Content Include="Testing\insulated\10252804x1038343_zm.jpeg" />
+    <Content Include="Testing\insulated\10252804x1149670_zm.jpeg" />
+    <Content Include="Training\hardshell\10116634x1038116_zm.jpeg" />
+    <Content Include="Training\hardshell\10116634x1068361_zm.jpeg" />
+    <Content Include="Training\hardshell\10116634x1072858_zm.jpeg" />
+    <Content Include="Training\hardshell\101634.jpeg" />
+    <Content Include="Training\hardshell\10184183x1012360_zm.jpeg" />
+    <Content Include="Training\hardshell\10184183x1012905_zm.jpeg" />
+    <Content Include="Training\hardshell\10184183x1068533_zm.jpeg" />
+    <Content Include="Training\hardshell\10184183x1140536_zm.jpeg" />
+    <Content Include="Training\hardshell\10184183x1140544_zm.jpeg" />
+    <Content Include="Training\hardshell\10184184x1035919_zm.jpeg" />
+    <Content Include="Training\hardshell\10184184x1036924_zm.jpeg" />
+    <Content Include="Training\hardshell\10184184x1061637_zm.jpeg" />
+    <Content Include="Training\hardshell\10184184x1120173_zm.jpeg" />
+    <Content Include="Training\hardshell\10184184x1140528_zm.jpeg" />
+    <Content Include="Training\hardshell\10184925x1012371_zm.jpeg" />
+    <Content Include="Training\hardshell\10184925x1012905_zm.jpeg" />
+    <Content Include="Training\hardshell\102018.jpeg" />
+    <Content Include="Training\hardshell\104837.jpeg" />
+    <Content Include="Training\hardshell\106260.jpeg" />
+    <Content Include="Training\hardshell\108785.jpeg" />
+    <Content Include="Training\hardshell\110026.jpeg" />
+    <Content Include="Training\hardshell\110630.jpeg" />
+    <Content Include="Training\hardshell\110709.jpeg" />
+    <Content Include="Training\hardshell\111417.jpeg" />
+    <Content Include="Training\hardshell\111875.jpeg" />
+    <Content Include="Training\hardshell\111876.jpeg" />
+    <Content Include="Training\hardshell\112030.jpeg" />
+    <Content Include="Training\hardshell\112126.jpeg" />
+    <Content Include="Training\hardshell\112127.jpeg" />
+    <Content Include="Training\hardshell\112128.jpeg" />
+    <Content Include="Training\hardshell\117218.jpeg" />
+    <Content Include="Training\hardshell\117497.jpeg" />
+    <Content Include="Training\hardshell\118014.jpeg" />
+    <Content Include="Training\hardshell\118016.jpeg" />
+    <Content Include="Training\hardshell\119214.jpeg" />
+    <Content Include="Training\hardshell\120634.jpeg" />
+    <Content Include="Training\hardshell\120635.jpeg" />
+    <Content Include="Training\hardshell\121398.jpeg" />
+    <Content Include="Training\hardshell\121966.jpeg" />
+    <Content Include="Training\hardshell\124431.jpeg" />
+    <Content Include="Training\hardshell\762351.jpeg" />
+    <Content Include="Training\hardshell\845409.jpeg" />
+    <Content Include="Training\hardshell\859978.jpeg" />
+    <Content Include="Training\hardshell\863364.jpeg" />
+    <Content Include="Training\hardshell\866781.jpeg" />
+    <Content Include="Training\hardshell\880692.jpeg" />
+    <Content Include="Training\hardshell\880722.jpeg" />
+    <Content Include="Training\hardshell\880723.jpeg" />
+    <Content Include="Training\hardshell\880724.jpeg" />
+    <Content Include="Training\hardshell\884542.jpeg" />
+    <Content Include="Training\hardshell\887388.jpeg" />
+    <Content Include="Training\hardshell\892141.jpeg" />
+    <Content Include="Training\hardshell\893230.jpeg" />
+    <Content Include="Training\hardshell\894317.jpeg" />
+    <Content Include="Training\hardshell\894338.jpeg" />
+    <Content Include="Training\hardshell\894916.jpeg" />
+    <Content Include="Training\hardshell\895322.jpeg" />
+    <Content Include="Training\hardshell\895441.jpeg" />
+    <Content Include="Training\hardshell\895794.jpeg" />
+    <Content Include="Training\hardshell\896903.jpeg" />
+    <Content Include="Training\insulated\10167913x1063714_zm.jpeg" />
+    <Content Include="Training\insulated\10167913x1116023_zm.jpeg" />
+    <Content Include="Training\insulated\10167913x1116127_zm.jpeg" />
+    <Content Include="Training\insulated\10167913x1131896_zm.jpeg" />
+    <Content Include="Training\insulated\10167913x1152157_zm.jpeg" />
+    <Content Include="Training\insulated\10221581x1012905_zm.jpeg" />
+    <Content Include="Training\insulated\10221581x1042197_zm.jpeg" />
+    <Content Include="Training\insulated\10221581x1107976_zm.jpeg" />
+    <Content Include="Training\insulated\10221581x1151144_zm.jpeg" />
+    <Content Include="Training\insulated\10221581x1151234_zm.jpeg" />
+    <Content Include="Training\insulated\10223782x1012905_zm.jpeg" />
+    <Content Include="Training\insulated\10223782x1042852_zm.jpeg" />
+    <Content Include="Training\insulated\10223782x1086840_zm.jpeg" />
+    <Content Include="Training\insulated\10223782x1150948_zm.jpeg" />
+    <Content Include="Training\insulated\10223782x1150954_zm.jpeg" />
+    <Content Include="Training\insulated\10223783x1012905_zm.jpeg" />
+    <Content Include="Training\insulated\10223783x1036899_zm.jpeg" />
+    <Content Include="Training\insulated\10223783x1086840_zm.jpeg" />
+    <Content Include="Training\insulated\10223783x1150950_zm.jpeg" />
+    <Content Include="Training\insulated\10223783x1150954_zm.jpeg" />
+    <Content Include="Training\insulated\10223784x1013039_zm.jpeg" />
+    <Content Include="Training\insulated\10223784x1036951_zm.jpeg" />
+    <Content Include="Training\insulated\10229002x1012905_zm.jpeg" />
+    <Content Include="Training\insulated\10229002x1038050_zm.jpeg" />
+    <Content Include="Training\insulated\10229002x1042015_zm.jpeg" />
+    <Content Include="Training\insulated\10229002x1044967_zm.jpeg" />
+    <Content Include="Training\insulated\10251218x1010953_zm.jpeg" />
+    <Content Include="Training\insulated\10251218x1012905_zm.jpeg" />
+    <Content Include="Training\insulated\10251218x1149124_zm.jpeg" />
+    <Content Include="Training\insulated\10252803x1012905_zm.jpeg" />
+    <Content Include="Training\insulated\10252803x1038337_zm.jpeg" />
+    <Content Include="Training\insulated\10252803x1044494_zm.jpeg" />
+    <Content Include="Training\insulated\102814.jpeg" />
+    <Content Include="Training\insulated\103454.jpeg" />
+    <Content Include="Training\insulated\103789.png" />
+    <Content Include="Training\insulated\105017.jpeg" />
+    <Content Include="Training\insulated\112543.jpeg" />
+    <Content Include="Training\insulated\116467.png" />
+    <Content Include="Training\insulated\117169.jpeg" />
+    <Content Include="Training\insulated\117255.jpeg" />
+    <Content Include="Training\insulated\117956.jpeg" />
+    <Content Include="Training\insulated\118237.jpeg" />
+    <Content Include="Training\insulated\118504.jpeg" />
+    <Content Include="Training\insulated\121005.jpeg" />
+    <Content Include="Training\insulated\121616.png" />
+    <Content Include="Training\insulated\121631.png" />
+    <Content Include="Training\insulated\2031197_604_main.jpg" />
+    <Content Include="Training\insulated\2032147_004_main.jpg" />
+    <Content Include="Training\insulated\2032557_315_main.jpg" />
+    <Content Include="Training\insulated\2032558_209_main.jpg" />
+    <Content Include="Training\insulated\2032721_404_main.jpg" />
+    <Content Include="Training\insulated\2034956_001_main.jpg" />
+    <Content Include="Training\insulated\2041236_001_main.jpg" />
+    <Content Include="Training\insulated\2041239_001_main.jpg" />
+    <Content Include="Training\insulated\2041250_001_main.jpg" />
+    <Content Include="Training\insulated\2041443_001_main.jpg" />
+    <Content Include="Training\insulated\2041447_001_main.jpg" />
+    <Content Include="Training\insulated\2045135_001_main.jpg" />
+    <Content Include="Training\insulated\856105.jpeg" />
+    <Content Include="Training\insulated\866332.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -131,6 +265,7 @@
       <Version>6.1.5</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
